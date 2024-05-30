@@ -1,0 +1,34 @@
+Running statistician tests:
+TEST 1:
+Testing next, reset, length, sum, and mean (62 points).
+Test 1 passed.
+
+
+TEST 2:
+Testing minimum and maximum member functions (7 points).
+Test 2 passed.
+
+
+TEST 3:
+Testing the + operator (7 points).
+Test 3 passed.
+
+
+TEST 4:
+Testing the * operator (7 points).
+Test 4 passed.
+
+
+TEST 5:
+Testing the == operator (7 points).
+Test 5 passed.
+
+If you submit the statistician now, this part of the
+grade will be 90 points out of 90.
+
+The TA will give you another
+0 - 10 points by looking into your program.
+
+C:\Users\Mattm\OneDrive\Documents\CCNY\CSC 21200 (Data Structures)\Assignments\DataStructures_Assignment_1\Debug\DataStructures_Assignment_1.exe (process 17188) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .

@@ -1,0 +1,43 @@
+Name: Matthew Munoz
+Emlp ID: 24370663
+
+void search(int a[], size_t first, size_t last, int target,
+    bool& found, size_t& location)
+{
+    size_t middle;
+
+    if (first > last)
+        found = false;
+    else
+    {
+        middle = (first + last) / 2;
+        if (target == a[middle])
+        {
+            location = middle;
+            found = true;
+        }
+        else if (target < a[middle])
+            search(a, first, middle - 1, target, found, location);
+        else
+            search(a, middle + 1, last, target, found, location);
+    }
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------_
+Test: 
+
+[   1   ,   2   ,   3   ,   4   ,   5   ,   6   ,   7   ,   8   ,   9   ,   10   ]
+   [0]     [1]     [2]     [3]     [4]     [5]     [6]     [7]     [8]      [9]
+
+
+Looking for 7
+
+First Call: First [0], Last [9], Middle (First + Last)/2 =(9+0)/2 = [4] which is 5 (7 in second half)
+
+Second Call: First (middle + 1) = (4+1) = [5], Last [9], Middle (First + Last)/2 = (9+5)/2 = [7] which is 8 (7 in first half)
+
+Third Call: First [5], Last (middle - 1) = (7-1) = [6], Middle (First + Last)/2 = (5+6)/2 = [5] which is 6 (7 in second half)
+
+Fourth Call: First (middle + 1) = (5+1) = [6], Last: [6], Middle (First + Last)/2 = (6+6)/2 = [6] Which is 7 (Found)
